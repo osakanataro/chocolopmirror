@@ -1,0 +1,32 @@
+#
+#
+use File::Path qw(make_path);
+#
+# 「$」や「@」は「\$」「\@」などの様に指定すること
+$loginuser="";
+$loginpass="";
+
+$basedir="/showroom/cl2";
+
+$cookienew="/tmp/cl2-cookie-new.txt";
+$cookieold="/tmp/cl2-cookie.txt";
+
+
+sub getfile{
+    local($url,$outputfile)=@_;
+
+    $ed=rindex($outputfile,"/");
+    $dirname=substr($outputfile,0,$ed);
+    if(!-d $dirname){
+	make_path($dirname);
+    }
+    if($debug>0){ print " ".$url." -> ".$outputfile."\n"; };
+
+    if(!-f $outputfile){
+	if($debug<2){
+	    print " ".$url." -> ".$outputfile."\n";
+	    rename($cookienew,$cookieold);
+	    $ret=system("curl","-L","-s","--cookie",$cookieold,"--cookie-jar",$cookienew,"-o",$outputfile,$url);
+	}
+    }
+}

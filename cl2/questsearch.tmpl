@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>依頼検索</title>
+
+<link href="/css/base.css" rel="stylesheet" type="text/css" />
+<link href="/css/navi.css" rel="stylesheet" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/jquery.heightLineMenuContent.js"></script>
+</head>
+<body>
+<a neme="top"></a>
+<div id="header">
+<nav id="nav" role="navigation">
+	<a href="#nav" title="Show navigation">Show navigation</a>
+	<a href="#" title="Hide navigation">Hide navigation</a>
+	<ul class="clearfix">
+		<li class="left-navi"><a href="top.php">F.i.V.E.</a>
+			<ul>
+<li>ステータスシート</li>				<li><a href="page.php?p=manual_0top">ゲームマニュアル</a></li>
+				<li><a href="top.php">TOP</a></li>
+			</ul>
+</li>
+		<li>
+			<a href="acceptance_top.php" aria-haspopup="true"><span>受付</span></a>
+			<ul>
+
+				<li><a href="character_search.php">ＰＣ検索</a></li>
+
+				<li><a href="acceptance_top.php">受付TOP</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="quest.php" aria-haspopup="true"><span>司令室</span></a>
+			<ul>
+				<li><a href="/quest.php?msu=0#list">オープニング一覧</a></li>
+				<li><a href="/quest.php?msu=1#list">リプレイ一覧</a></li>
+				<li><a href="/questsearch.php">依頼検索</a></li>
+				<li><a href="bfroom_stlist.php">ＳＴ一覧</a></li>
+				<li><a href="/page.php?p=manual_quest">司令室マニュアル</a></li>
+				<li><a href="/page.php?p=manual_1world2">戦闘ルール</a></li>
+				<li><a href="/page.php?p=manual_1world3">戦闘ルール（詳細）</a></li>
+				<li><a href="/quest.php">司令室TOP</a></li>
+			</ul>
+		</li>
+		<li><a href="atrie_top.php"><span>アトリエ</span></a>
+			<ul>
+				<li><a href="atrie_galary.php">イラストギャラリー</a></li>
+				<li><a href="atrie_search.php">ＶＣ、発注検索</a></li>
+				<li><a href="atrie_vclist.php">ＶＣリスト</a></li>
+				<li><a href="/atrie_newvclist.php">新規登録ＶＣ</a></li>
+				<li><a href="page.php?p=manual_atrie">アトリエマニュアル</a></li>
+				<li><a href="/page.php?p=manual_atrie2">発注の基本の流れ</a></li>
+				<li><a href="/page.php?p=manual_atrie3">イラスト活用/資料</a></li>
+				<li><a href="atrie_top.php">アトリエTOP</a></li>
+			</ul>
+		</li>
+		<li><a href="lounge_top.php"><span>ラウンジ</span></a>
+			<ul>
+				<li><a href="/team.php?id=1">※談話室こもれび</a></li>
+				<li><a href="/team.php?id=2">※五麟学園</a></li>
+				<li><a href="/team_list.php">チーム一覧</a></li>
+
+				<li><a href="/page.php?p=manual_team">チームマニュアル</a></li>
+				<li><a href="lounge_top.php">ラウンジTOP</a></li>
+			</ul>
+		</li>
+		<li><a href="shop_top.php"><span>神具庫</span></a>
+			<ul>
+				<li><a href="shop.php?t=1&sort=1">武具購入</a></li>
+				<li><a href="shop.php?t=2&sort=1">防具購入</a></li>
+				<li><a href="shop.php?t=3&sort=1">装身具購入</a></li>
+				<li><a href="item_enhance_list.php">神具強化</a></li>
+				<li><a href="shop.php?t=4">勾玉購入</a></li>
+				<li><a href="/item_booster_list.php">勾玉付与/解除</a></li>
+				<li><a href="shop.php?t=5">他アイテム購入</a></li>
+				<li><a href="/shop.php?s=&t=6">イラスト購入</a></li>
+				<li><a href="/item_set.php#change">名称変更申請</a></li>
+
+				<li><a href="/page.php?p=manual_item">神具庫マニュアル</a></li>
+				<li><a href="shop_top.php">神具庫TOP</a></li>
+			</ul>
+		</li>
+
+		<li><a href="mcoin_top.php"><span>モルコイン</span></a>
+			<ul>
+				<li><a href="mcoin_exchange.php">Mコイン交換申請</a></li>
+				<li><a href="mcoin_top.php">モルコインTOP</a></li>
+	</ul>
+		</li>
+
+
+		<li><a href="etc_top.php"><span>研究区域・他</span></a>
+			<ul>
+				<li><a href="ruins_exploration_play.php">神秘探索</a></li>
+				<li><a href="change_classify.php">術式再構成</a></li>
+				<li><a href="familiar_evolution.php">守護使役変化</a></li>
+				<li><a href="etc_top.php">研究区域TOP</a></li>
+			</ul>
+		</li>
+
+
+
+
+</nav>
+</div>
+
+
+<div id="wrapper" style="">
+	<div id="contents_wrapper">
+		<div id="content">
+
+			<div class="title_frame">
+依頼検索
+			</div>
+			<div class="content_frame">
+				<div class="main_content">
+
+
+<!--ESTFORM-->
+
+<!--ESTRESULT-->
+
+<!--ESTINFO-->
+
+<br>
+<br>
+<div align="center"><a href="#top"><img src="/img/to_top.png"></a></div>
+				</div>
+			</div>
+		</div>
+
+<div id="menu">
+ <div id="menu_logo"><img src="/img/mainlogo.png"></div>
+ <div id="login_info">
+  <span><a href="character_status.php?chara_code="><img src="/img/default/default_ic.png"></a></span>
+  <br>下記よりログインしてください<br><br>
+</div>
+<div id="login_form">
+ <form method="post">
+  <img src="/img/menu/loginid.png">
+  <input type="text" name="mail" value="" style="margin-top:0px;width:95%;"><br>
+  <img src="/img/menu/pass.png">
+  <input type="password" name="pass" value="" style="margin-top:0px;width:95%;"><br>
+  <input type="submit" name="login_button" value="ログイン" class="button">
+ </form>
+ <br><a href="password_ask.php"><img src="/img/menu/pass2.png"></a>
+</div>
+<br>
+<div align="center">
+ <a href="./member_entry.php"><img src="/img/menu/newid.png"><br>
+ <font size="2">新規ユーザー登録</font></a>
+ <a href="/page.php?p=story"><img src="/img/menu/story.png"></a>
+ <div class="menu_contents_title"><img src="/img/menu/users_guid.png"></div>
+ <div class="menu_contents">
+  <table class="menu_aboutes">
+   <tr><td><a href="/page.php?p=manual_new">&nbsp;はじめての方へ</a></td></tr>
+   <tr><td><a href="/page.php?p=manual_glossary">&nbsp;用語集</a></td></tr>
+   <tr><td><a href="/page.php?p=manual_0top">&nbsp;ゲームマニュアル</a></td></tr>
+  </table>
+ </div>
+ <div class="menu_contents_title"><img src="/img/menu/users_info.png"></div>
+ <div class="menu_contents">
+  <table class="menu_aboutes">
+   <tr><td><a href="/page.php?p=link">&nbsp;リンクについて</a></td></tr>
+   <tr><td><a href="http://www.chocolop.net/nijiinfo.htm" target=”_blank”>&nbsp;二次創作・使用について</a></td></tr>
+   <tr><td><a href="/page.php?p=credit">&nbsp;クレジット</a></td></tr>
+  </table>
+ </div>
+ <a href="http://www.chocolop.net/acceptindex.htm"><img src="/img/menu/creator.png"></a><br>
+ <a href="http://www.chocolop.net/"><img src="/img/menu/chocolop.jpg"></a>
+ <a href="https://twitter.com/aratanaru_cl2"><img src="/img/menu/twitter.png"></a><br>
+</div>
+</div>
+<div id="footer">
+	<div class="copyright">
+	<address>
+	Copyright &copy; 2013-2021 Chocolop
+	</address>
+	</div>
+</div>
+<div id="clcopysite" lang="ja" class="clcopysite">ここはミラーサイトです</div>
+<style type="text/css">
+.clcopysite{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1XMZYKJR04"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1XMZYKJR04');
+</script>
+</body>
+</html>
