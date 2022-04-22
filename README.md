@@ -150,3 +150,21 @@ mkdir bfroom_stprsheet character_status
 perl convert.pl bfroom_stprsheet
 
 perl convert.pl character_status
+
+
+メモ
+
+perl convert2.pl atrie_galary; perl convert2.pl atrie_vcprsheet;perl convert2.pl bfroom_stprsheet;perl convert2.pl character_status;perl convert2.pl page;perl convert2.pl quest;perl convert2.pl questlist;perl convert2.pl scenario_record;perl convert2.pl single
+
+cp -r css images img js ../clm/cl2/
+
+cp -r atrie_galary atrie_vcprsheet bfroom_stprsheet character_status page quest questlist scenario_record single .htaccess ../clm/cl2/
+
+
+perl convert2.pl atrie_galary; perl convert2.pl atrie_vcprsheet;perl convert2.pl bfroom_stprsheet;perl convert2.pl character_status;perl convert2.pl page;perl convert2.pl quest;perl convert2.pl questlist;perl convert2.pl scenario_record;perl convert2.pl single
+
+cp -r css images img js ../clm/cl3/
+
+cp -r atrie_galary atrie_vcprsheet bfroom_stprsheet character_status page quest questlist scenario_record single ../clm/cl3/
+
+
